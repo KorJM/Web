@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>이력서 2</title>
+    <style>
+        html, body { margin: 0; padding: 0; height: 100%; }
+        .header { width: 70%; margin-left: 15%; margin-right: 15%; height: 7%; 
+		    background: rgb(255, 255, 255); }
+        .nav { width: 15%; height: 100%; float: left; 
+		    background: rgb(255, 255, 255); }
+        .section { width: 70%; height: 93%; float: left; 
+		    background: rgb(255, 255, 255); }
+        .aside { width: 15%; height: 100%; float: left; 
+		    background: rgb(255, 255, 255); }
+        .footer { width: 0%; height: 0%; clear: both; 
+		    background: rgb(255, 255, 255); }
+        table,tr,td{
+            border: 1px solid rgb(21, 111, 129);
+            border-spacing: 0px 0px;
+        }        
+    </style>
+</head>
+<body>
+<div?>
+    <header class="header">
+        <div style="border:5px solid black; padding:10px; margin-left: 15%; margin-right: 15%;">
+            <h1 style="text-align: center;">이력서</h1>
+        </div>
+
+    </header>
+	<nav class="nav">
+
+    </nav>
+	<section class="section">
+        
+        <ul>
+            <li>
+                <h3>인 적 사 항</h3>
+            </li>
+        </ul>
+        <table border="3" cellpadding = "" width="1800" height = "250" style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td rowspan="5" width = "200">         
+                    <img src= "data:image/jpeg;base64,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" width="200" height="250">
+                </td>
+                <td bgcolor="#BDBDBD" style="text-align: center;" width = "300">
+                    이름
+                </td>
+                <td style="text-align: center;">
+                    &nbsp;
+                </td>
+                <td bgcolor="#BDBDBD" style="text-align: center;" width = "300">
+                    성별
+                </td>
+                <td style="text-align: center;">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#BDBDBD" style="text-align: center;">
+                    생년월일
+                </td>
+                <td style="text-align: center;">
+                    &nbsp;
+                </td>
+                <td bgcolor="#BDBDBD" style="text-align: center;">
+                    주민등록번호
+                </td>
+                <td style="text-align: center;">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#BDBDBD" style="text-align: center;">
+                    연락처
+                </td>
+                <td style="text-align: center;">
+                    &nbsp;
+                </td>
+                <td bgcolor="#BDBDBD" style="text-align: center;">
+                    자택 번호
+                </td>
+                <td style="text-align: center;">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#BDBDBD" style="text-align: center;">
+                    이메일
+                </td>
+                <td colspan="3" style="text-align: center;">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#BDBDBD" style="text-align: center;">
+                    주소
+                </td>
+                <td colspan="3" style="text-align: center;">
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+        
+        <ul>
+            <li>
+                <h3>학 력 사 항</h3>
+            </li>
+        </ul>
+        <table border="3" width = "1800" style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td style="text-align: center;" bgcolor="#BDBDBD">
+                    기간 (년, 월)
+                </td>
+                <td style="text-align: center;" bgcolor="#BDBDBD">
+                    학교명 (학위)
+                </td>
+                <td style="text-align: center;" bgcolor="#BDBDBD">
+                    전공학과
+                </td>
+                <td style="text-align: center;" bgcolor="#BDBDBD">
+                    학점 / 만점
+                </td>
+                <td style="text-align: center;" bgcolor="#BDBDBD">
+                    소재지
+                </td>
+            </tr>
+            <tr height = "50">
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+            </tr>
+            <tr height = "50">
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+            </tr>
+            <tr height = "50">
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+            </tr>
+            <tr height = "50">
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+            </tr>
+        </table>
+    
+        <ul>
+            <li>
+                <h3>자 격 증 및 수 상 경 력</h3>
+            </li>
+        </ul>
+        <table border="3" width = "1800" style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td bgcolor="#BDBDBD">
+                    
+                </td>
+                <td style="text-align: center;" bgcolor="#BDBDBD">
+                    년도 (년, 월)
+                </td>
+                <td style="text-align: center;" bgcolor="#BDBDBD">
+                    세부 내용
+                </td>
+            </tr>
+            <tr>
+                <td rowspan = "3" style="text-align: center;" width = "150" height = "100">
+                    자격 / 면허
+                </td>
+                <td style="text-align: center;">
+                    
+                </td> 
+                <td style="text-align: center;">
+                    
+                </td>        
+            </tr>
+            <tr>
+                <td style="text-align: center;" width = "150">
+                    
+                </td>    
+                <td style="text-align: center;">
+                    
+                </td>     
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    
+                </td>        
+                <td style="text-align: center;">
+                    
+                </td>   
+            </tr>
+            <tr>
+                <td  rowspan = "3" style="text-align: center;" width = "150" height = "100">
+                    수상 경력
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                </td> 
+                
+            </tr>
+            <tr>
+                <td style="text-align: center;" width = "150" >
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                    
+                </td>          
+            </tr>
+            <tr>
+                <td style="text-align: center;" width = "150" >
+                    
+                </td>
+                <td style="text-align: center;">
+                    
+                    
+                </td>          
+            </tr>
+    
+        </table>
+        
+        <ul>
+            <li>
+                <h3>경 력 사 항</h3>
+            </li>
+        </ul>
+        <table border="3" width = "1800" style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td width ="150" style="text-align: center;" bgcolor="#BDBDBD" height = "40">
+                    회사명
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" bgcolor="#BDBDBD" height = "40">
+                    근무기간
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;" bgcolor="#BDBDBD" height = "40">
+                    근무부서<br>/직위
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+            </tr>
+        </table>
+        <ul>
+            <li>
+                <h3>입 사 동 기 및 포 부</h3>
+            </li>
+        </ul>
+        <table border="3" width = "1800" style="margin-left: auto; margin-right: auto;">
+            <tr>
+                <td width ="150" height = "150" style="text-align: center;" bgcolor="#BDBDBD" height = "40">
+                    입사 동기
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td  height = "200" style="text-align: center;" bgcolor="#BDBDBD" height = "40">
+                    입사 후 포부
+                </td>
+                <td style="text-align: center;">
+                    
+                </td>
+            </tr>
+        </table>
+    </section>
+
+	<aside class="aside">
+
+    </aside>
+	<footer class="footer">
+
+    </footer>
+
+</body>
+</html>
