@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>구구단</title>
+    <style>
+    table, tr, td {
+        border : 1px solid black;
+    }
+    tr, td {
+        text-align: center;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <h2 align = "center">구구단</h2>
+    <hr>
+    <script>
+        
+        const rowCnt = 2;   
+        const columnCnt = 4;
+        let idx = 2;
+        
+        document.write('<table align = "center" border = "2">');
+        for (let i = 0; i < rowCnt; i++) {
+            document.write('<tr bgcolor = "#'+Math.floor(Math.random() * 16777215).toString(16) +'" width = 200 height = 400>');
+
+            for (let j = 0; j < columnCnt; j++)  {
+                document.write('<td bgcolor = "#'+Math.floor(Math.random() * 16777215).toString(16) +'" width = 200 height = 400>');
+                    for (let k = 1; k < 10; k++){
+                        document.write("<br>"+ idx + " * " + k + " = " + (idx * k) +"<br>");
+                    }
+                    idx++
+                document.write('</td>');
+            }
+            document.write('</tr>')
+        }
+        document.write('</table>');
+    </script>
+</body>
+</html>
