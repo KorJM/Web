@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+
+    const cal = () => {
+        var sel = document.getElementById("calculator");
+        var oper = sel.options[sel.selectedIndex].value;
+        var txtx = document.getElementById("txt-x");
+        var txty = document.getElementById("txt-y");
+        var result = document.getElementById("txt-result");
+        var x = parseInt(txtx.value);
+        var y = parseInt(txty.value);
+
+    switch(oper){
+        case '+':
+            result.value = x + y;
+            break;
+        case '-':
+            result.value = x - y;
+            break;
+        case 'x':
+          result.value = x * y;
+            break;
+        default:
+            result.value = x / y;
+            break;
+        }
+    };
+
+    </script>
+</head>
+
+<body>
+    <h2>사칙연산 프로그램</h2>
+    <hr>
+    <div>
+    <input id="txt-x" type="text" value="0" dir="rtl" />
+    <select id="calculator">
+        <option value="+" selected> + </option>
+        <option value="-"> - </option>
+        <option value="x"> &#215; </option>
+        <option value="/"> / </option>
+    </select> 
+    <input id="txt-y" type="text" value="0" dir="rtl" />
+    <input type="button" value="=" onclick="cal()" />
+    <input id="txt-result" type="text" value="0" readonly dir="rtl" />
+    </div>
+</body>
+
+</html>
